@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parrelex</title>
+    <link rel="stylesheet" href="parrelex.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#"class="active">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <img src="images/mountains_front.png" id="mountains_front">
+        <h2 id= "text">moon light</h2>
+        <a href="#sec" id="btn">explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>parrelex scrolling effects</h2>
+        <p> fuga soluta impedit, quo minus rerum neque hic esse nulla quae iusto 
+            ipsam eius vel facilis officiis quo minus rerum neque hic esse nulla quae iusto
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor tempore recusandae quae veniam, doloremque quidem. Voluptatibus, delectus optio repellendus ex nobis exercitationem molestias necessitatibus fugiat aperiam, beatae
+            voluptate dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam in dolore harum esse, quos amet vero tempora dolorum earum maxime beatae, molestiae tenetur illo laboriosam ipsa animi aut qui
+            totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias rem voluptatibus numquam, officiis deserunt deleniti exercitationem praesentium quis nobis cupiditate esse quae laborum debitis sunt, explicabo suscipit eligendi dignissimos 
+            placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            praesentium, fuga soluta impedit, quo minus rerum neque hic esse nulla quae iusto Quos vitae cupiditate consectetur,
+            <br><br><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor tempore recusandae quae veniam, doloremque quidem. Voluptatibus, delectus optio repellendus ex nobis exercitationem molestias necessitatibus fugiat aperiam, beatae
+            voluptate dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam in dolore harum esse, quos amet vero tempora dolorum earum maxime beatae, molestiae tenetur illo laboriosam ipsa animi aut qui
+            totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias rem voluptatibus numquam, officiis deserunt deleniti exercitationem praesentium quis nobis cupiditate esse quae laborum debitis sunt, explicabo suscipit eligendi dignissimos 
+            placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vitae cupiditate consectetur,
+            praesentium, fuga soluta impedit, quo minus rerum neque hic esse nulla quae iusto
+            ipsam eius vel facilis officiis 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor tempore recusandae quae veniam, doloremque quidem. Voluptatibus, delectus optio repellendus ex nobis exercitationem molestias necessitatibus fugiat aperiam, beataevoluptate dolores. 
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor tempore recusandae quae veniam, doloremque quidem. Voluptatibus, delectus optio repellendus ex nobis exercitationem molestias necessitatibus fugiat aperiam, beatae
+            voluptate dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam in dolore harum esse, quos amet vero tempora dolorum earum maxime beatae, molestiae tenetur illo laboriosam ipsa animi aut qui
+            totam.
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let maountain_back = document.getElementById('mountain_back');
+        let mountain_front = document.getElementById('mountain_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector ('header')
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value *1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            
+});
+    </script>
+</body>
+</html>
